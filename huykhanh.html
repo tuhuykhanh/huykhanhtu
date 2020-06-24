@@ -1,0 +1,1290 @@
+<div id="cv-layout-viewer" class="hover-active" style="">
+      <style type="text/css">
+            /*===========format page & print==========*/
+               @page {
+                  size: A4;
+                  margin: 0cm;
+                  padding: 0cm;
+               }
+               body {
+                  background-color: #fff0;  
+                  margin: 0px;
+                  -webkit-font-smoothing: antialiased;
+               }
+               #onecv-document-root {
+                  margin: 0cm auto;
+                  padding: 0cm;
+                  font-size: 12pt;
+                  position: relative;
+               }
+               #onecv-document {
+                  color: #000;
+               }
+               .onecv-document {
+                  width: 100%;
+               }
+               .onecv-document .onecv-page {
+                  width: 210mm;
+                  min-height: 296.86mm;
+                  padding: 20mm;
+                  margin: 0mm auto;
+                  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+                  background-color: white;
+               }
+               .onecv-document .onecv-subpage {
+                  padding: 5mm;
+                  min-height: 296.86mm;
+               }
+               .onecv-document .onecv-page {
+                  padding: 0mm;
+                  background-size: 100% 100%;
+                  background-repeat: no-repeat;
+                  position: relative;
+               }
+               .onecv-document .onecv-subpage {
+                  padding: 0mm;
+                  padding-bottom: 0cm;
+               }
+
+               #onecv-body {
+                  margin: 0 auto;
+                  width: 100%;
+                  min-height: 296.86mm;
+                  position: relative;
+                  font-family: 'Roboto', sans-serif;
+                  font-weight: normal;
+                  font-size: 13px;
+                  line-height: 18px;
+                  color: #545E6C;
+               }
+
+               #onecv-main {
+               }
+               #col-main {
+                  width: 70%;
+                  float: right;
+                  color: #444444;
+                  min-height: 296.86mm;
+                  padding-top: 25px;
+               }
+               #col-side {
+                  width: 30%;
+                  color: #444;
+                  min-height: 296.86mm;
+                  float: left;
+                  padding-bottom: 20px;
+               }
+               #col-main .onecv-block {
+                  width: 100%;
+                  padding: 5px 10px 5px 10px;
+               }
+
+               #col-main .row {
+               margin: 15px 0;
+               }
+
+               #col-side {
+               padding: 0px;
+               }
+               #col-side .onecv-block {
+                  width: 100%;
+                  padding: 5px 10px 5px 10px;
+               }
+               .onecv-month::after {
+                     margin-right: -3px;
+                     content: "/";
+                  }
+                .images{
+                        width: 100%;
+                  height: auto;
+                  text-align: center; 
+                        }
+               .thumb {
+                  width: 170px;
+                  height: 170px;
+                        background-color: #fff;
+                        background-image: none;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        display: inline-block;
+                        
+                        cursor: pointer;
+                        border-radius: 50%;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        }            
+               @media print {
+                  body {
+
+                     background-size: 100% 100%;
+                     background-repeat: no-repeat;
+                     background-attachment: fixed;
+                  }
+                  .onecv-document .onecv-page {
+                     background-image: none;
+                  }
+                  #col-main .onecv-block:last-child {
+                     padding-bottom: 0;
+                  }
+                  #group-bottom-right .onecv-block:last-child {
+                     padding-bottom: 0;
+                  }
+               }
+               #cv-watermark {
+               position: absolute;
+               right: 10px;
+               bottom: 10px;
+               font-size: 11px;
+               color: #999;
+               }
+               @media print {
+               .onecv-document .onecv-page {
+                  position: initial;
+               }
+               }
+            /*===============end================*/
+            /*=============template===============*/
+               h1,
+               h2,
+               h3,
+               h4,
+               h5,
+               h6 {
+                  font-weight: 700;
+               }
+               a {
+               color: #e7bea7;
+               -webkit-transition: all 0.4s ease-in-out;
+               -moz-transition: all 0.4s ease-in-out;
+               -ms-transition: all 0.4s ease-in-out;
+               -o-transition: all 0.4s ease-in-out;
+               }
+               img {
+               width: 180px;
+               height: 180px;
+               border-radius: 50%;
+               margin-top: 20px;
+               margin-bottom: 10px;
+               }
+               a:hover {
+               text-decoration: underline;
+               color: #1a454f;
+               }
+               a:focus {
+               text-decoration: none;
+               }
+               p {
+               line-height: 1.5;
+               }
+               .inline{
+                  display: inline;
+               }
+               .star{
+                margin-right: 0px; 
+                color: #bfbfbf;
+               }
+               .star:before{
+               content: "\f111"; 
+               font-family: FontAwesome;
+               }
+               .checked_rating {
+               color: #e7bea7;
+               }
+               .level-star-inner{
+               /*css*/
+               }
+               .level-star{
+               float: right;
+               display: inline;
+               }
+               .level-title{
+               float: left;
+               display: inline;
+               }
+               .at::after{
+                  content: "|";
+                  padding-left: 5px;
+                  padding-right: 5px;
+               }
+               .wrapper {
+               background: #42A8C0;
+               max-width: 807px;
+               margin: 0 auto;
+               position: relative;
+               -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+               -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+               box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+               }
+               .sidebar-wrapper {
+               background: #ededed;
+               position: static;
+               right: 0;
+               height: 100%;
+               min-height: 800px;
+               color: #444;
+               }
+               .sidebar-wrapper a {
+               color: #444;
+               }
+               .sidebar-wrapper .profile-container {
+               padding: 5px;
+               color: #444;
+               }
+               .sidebar-wrapper .name {
+               font-size: 20px;
+               font-weight: 900;
+               margin-top: 0;
+               margin-bottom: 10px;
+               text-align: center;
+               line-height: 22px;
+               }
+               .sidebar-wrapper .tagline {
+              /* color: rgba(255, 255, 255, 0.6);*/
+               font-size: 13px;
+               font-weight: 400;
+               margin-top: 0;
+               margin-bottom: 0;
+               text-align: center;
+               }
+               .sidebar-wrapper .profile {
+               margin-bottom: 15px;
+               text-align: center;
+               }
+
+                .school {
+               margin-bottom: 10px;
+               margin-top: -6px;
+               color: #97AAC3;
+               }
+                .degree {
+               color: #3F4650;
+               font-size: 13px;
+               margin-top: 0;
+               /*margin-bottom: 5px;*/
+               /*font-weight: 500;*/
+               }
+               .meta {
+               color: rgba(6, 0, 255, 0.6);
+               font-weight: 500;
+               margin-bottom: 0px;
+               margin-top: 0;
+               }
+               .time {
+               color: rgba(255, 255, 255, 0.6);
+               font-weight: 500;
+               margin-bottom: 0px;
+               }
+               .email{
+                  word-break: break-all;
+               }
+               .website{
+                  word-break: break-all;
+               }
+               .linkedin{
+                  word-break: break-all;
+               }
+               .facebook{
+                  word-break: break-all;
+               }
+
+               #col-main .section-title {
+               text-transform: uppercase;
+               font-size: 16px;
+               font-weight: bold;
+               color: #333;
+               position: relative;
+               margin-top: 0;
+               text-align: center;
+               /*letter-spacing: 3px;*/
+               margin-bottom: 20px;
+               }
+               #col-main .section-title-first {
+               position: relative;
+               z-index: 2;
+               display: inline;
+               background: #fff;
+               padding-right: 20px;
+               padding-left: 20px;
+               }
+               .after{
+                  position: absolute;
+               left: 0;
+               top: 8px;
+               height: 1px;
+               background: #e7bea7;
+               content: "";
+               width: 100%;
+               display: block;
+               z-index: 1;
+               }
+               #col-side .section-title {
+               text-transform: uppercase;
+               font-size: 16px;
+               font-weight: bold;
+               color: #333;
+               position: relative;
+               margin-top: 0;
+               text-align: center;
+               /*letter-spacing: 3px;*/
+               margin-bottom: 20px;
+               }
+               #col-side .section-title-first {
+               position: relative;
+               z-index: 2;
+               display: inline;
+               background: #ededed;
+               padding-right: 15px;
+               padding-left: 15px;
+               }
+               .title{
+                  
+               }
+                 
+                .onecv-ico{}
+                  .onecv-ico:before
+                  {
+                  font-family: FontAwesome;
+                  font-style: normal;
+                  font-weight: normal;
+                  text-decoration: inherit;
+                  width: 25px;
+                  height: 25px;
+                  margin-right: 8px;
+                  display: inline-block;
+                  color: #fff;
+                  z-indexwebkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  border-radius: 50%;
+                  -moz-background-clip: padding;
+                  -webkit-background-clip: padding-box;
+                  background-clip: padding-box;
+                  background: #e7bea7;
+                  text-align: center;
+                  padding-top: 4px;
+                  padding-left: 1px;
+                  font-size: 12px;
+                  position: relative;
+                  top: 0px;
+                  }   
+                   .icoAdress{
+                  margin-right: 5px;
+                  }
+                  .icoAdress:before{
+                   content: "\f015";      
+                  }
+                  .icoPhone{
+                  margin-right: 5px;
+                  }
+                  .icoPhone:before{
+                   content: "\f095";      
+                  }
+                  .icoEmail{
+                  margin-right: 5px;
+                  }
+                  .icoEmail:before{
+                   content: "\f003";      
+                  }
+                  .icoDate{
+                  margin-right: 5px;
+                  }
+                  .icoDate:before{
+                   content: "\f073";      
+                  }
+                  .icoPlace{
+                  margin-right: 5px;
+                  }
+                  .icoPlace:before{
+                   content: "\f041";      
+                  }
+                  .icoMarital{
+                  margin-right: 5px;
+                  }
+                  .icoMarital:before{
+                   content: "\f184";      
+                  }
+                  .icoCiti{
+                  margin-right: 5px;
+                  }
+                  .icoCiti:before{
+                   content: "\f1b6";      
+                  }
+                  .icoLinkedin{
+                  margin-right: 5px;
+                  }
+                  .icoLinkedin:before{
+                   content: "\f0e1";      
+                  }
+                  .icoFacebook{
+                  margin-right: 5px;
+                  }
+                  .icoFacebook:before{
+                   content: "\f230";      
+                  }
+                  .icoWebsite{
+                  margin-right: 5px;
+                  }
+                  .icoWebsite:before{
+                   content: "\f002";      
+                  }
+               .upper-row {
+                  position: relative;
+                  overflow: hidden;
+                  /*margin-bottom: 5px;*/
+               }
+               .job-title {
+                  color: #3F4650;
+                  font-size: 13px;
+                  margin-top: 0;
+                  margin-bottom: 5px;
+                  /*font-weight: 500;*/
+               }
+               .time {
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  color: #97AAC3;
+               }
+               .company {
+                  margin-bottom: 10px;
+                  margin-top: -5px;
+                  color: #97AAC3;
+               }
+               .skillset{
+                  padding: 2px;
+               }
+               .skillset .level-title {
+               font-size: 14px;
+               margin-top: 0;
+		width: 50%;	
+               }
+               .skillset .level-bar {
+               height: 12px;
+               background: #f5f5f5;
+               }
+               .skillset .level-bar-inner {
+               height: 12px;
+               background: #e7bea7;
+               }
+
+               .awards{
+                  padding: 5px;
+               }
+               .activity{
+                  font-weight: 700;
+               }
+               .activities{
+                  padding: 5px
+               }
+               .activity{
+
+               }
+               .details{
+                  color: #545E6C;
+               }
+               .additional{
+                  padding: 5px;
+               }
+               .experience{
+                  /*font-weight: 500;*/
+                  margin-bottom: 0px;
+                  margin-top: 0;
+                  padding: 5px;
+               }
+               .education{
+                  /*font-weight: 500;*/
+                  margin-bottom: 0px;
+                  margin-top: 0;
+                  padding: 5px;
+               }
+               .summary{
+                  padding: 5px;
+               }
+               .references{
+                  padding: 5px;
+               }
+               .projects{
+                  padding: 5px;
+               }
+               .interests{
+                  padding: 2px;
+               }
+               .languages{
+                  padding: 2px;
+                  position: relative;
+                  overflow: hidden;
+                  margin-bottom: 2px;
+               }
+               .fluency{
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  color: #e7bea7;
+               }
+            /*==============end=================*/
+            /*=============css editor==============*/
+               .section {
+                  border: 2px solid rgba(255, 255, 255, 0);
+                  padding: 5px;
+               }
+               .js_onecv-item {
+                  border: 2px solid rgba(255, 255, 255, 0);
+                  cursor: pointer;
+                  padding: 1px;
+                  margin-bottom: 5px;
+               }
+               .hover-active .js_onecv-item:hover {
+                  border: 2px solid #adb1b5;
+                  cursor: pointer;
+		border-style: dashed;
+               }
+               .options_toolbar {
+                  margin-top: -30px;
+                  display: none;
+                  height: 30px;
+                   border: 2px solid #adb1b5;
+                  width: auto;
+                  padding: 1px;
+                  text-align: center;  
+                  /*position: fixed;*/ 
+                  background: #adb1b5;
+                  border-radius: 4px 4px 0 0;
+                  z-index: 999999999999;
+               }
+               .options_toolbar .tip {
+                  min-width: 30px;
+                  width: auto;
+                  float: left;
+                  color: #fff;
+                  font-size: 20px;
+                  text-align: center;
+                  cursor: pointer;
+                  margin-left: 5px;
+               }
+               .options_toolbar .tip:before {
+                  content: "Nhấn vào để chỉnh sửa, nắm để kéo thả sắp xếp các mục.";
+                  font-size: 14px;
+                  font-style: italic;
+                  font-weight: 200;
+               }
+               .options_toolbar .bt {
+                  height: 100%;
+                  min-width: 30px;
+                  width: auto;
+                  float: right;
+                  color: #fff;
+                  font-size: 20px;
+                  text-align: center;
+                  cursor: pointer;
+                  margin: 7px;
+               }
+               .options_toolbar .bt-del-block {
+                  margin-right: 5px;
+                  position: relative;
+                  margin-top: 5px;
+               }
+               .options_toolbar .bt-del-block:before {
+                  content: "\f00d";
+                  font-family: FontAwesome;
+                  font-style: normal;
+                  font-weight: normal;
+                  text-decoration: inherit;
+                  color: #666;
+                  font-size: 25px ;
+               }
+               .options_toolbar .bt-handle {
+                  margin-right: 5px;
+                  position: relative;
+                  margin-top: 5px;
+               }
+               .options_toolbar .bt-handle:before {
+                  content: "\f047";
+                  font-family: FontAwesome;
+                  font-style: normal;
+                  font-weight: normal;
+                  text-decoration: inherit;
+                  color: #666;
+                  font-size: 24px;
+               }
+               .css_add-sections {
+                  display: block;
+                  position: inherit;
+                  margin-right: 5px;
+                  width: 100%;
+                  height: 40px;
+                  padding: 4px;
+                  border: 2px dashed #adb1b5;
+                  text-align: center;
+                  cursor: pointer;
+                  font-size: 22px;
+                  background: #f5f5f5;
+                  z-index: 9999999999;
+                  color: black;
+                  -webkit-animation: mymove 2s infinite;
+                  animation: mymove 2s infinite;
+               }
+               
+               .portlet-placeholder {
+                  border: 3px dashed #09f;
+                  margin: 0 1em 1em 0;
+                  -webkit-animation: mymove 2s infinite;
+                  animation: mymove 2s infinite;
+               }
+               @-webkit-keyframes mymove {
+               50% {
+                  border-color: coral;
+               }
+               }
+               @keyframes mymove {
+               50% {
+                  border-color: coral;
+               }
+               }
+               .bt-add-field {
+                  display: none;
+                  width: 100%;
+                  height: 30px;
+                  border: 2px dashed #adb1b5;
+                  text-align: center;
+                  cursor: pointer;
+                  font-size: 19px;
+                  background: #f5f5f5;
+                  padding: 5px;
+                  color: black;
+                  -webkit-animation: mymove 2s infinite;
+                  animation: mymove 2s infinite;
+               }
+               .bt-add-field:hover {
+                  border-color: #27ace2;
+                  color: #27ace2;
+               }
+            /*======================*/
+      </style>
+      <div id="onecv-document-root">
+         <div id="onecv-document" class="onecv-document">
+            <div class="onecv-page">
+               <div class="onecv-subpage">
+                  <div id="onecv-body">
+                     <div id="onecv-main">
+                        <!-- Content  -->
+                        <div id="col-side" class="sidebar-wrapper" style="min-height: 2244px;">
+                           <div id="group-top-side">
+                              
+                           </div>
+                           <div id="group-bottom-side" class="sortable-sidebar ui-sortable">
+                              
+                              
+                              
+                              
+                           <div id="onecv-personal" class="onecv-block" data-pos="1" data-section="personal_info" data-uniqid="caf1d764-acba-ae68-01c5-659824356e55">
+                                 <!--//profile-container-->
+                                 <section class="profile-container section">
+                                    <div class="images">
+                                       <div id="doc_images" class="thumb" style="background-image: url(&quot;https://topdev.vn/tao-cv-online/Resume/2020/06/17/6991/avatar/1592383133.png&quot;);"></div>
+                                 </div>
+                                    <div class="address onecv-ico icoAdress js_onecv-item">
+                                       <span class="doc_address" style="font-size: 13px; line-height: 18px;">long xuyên, an giang</span>
+                                    </div>
+                                    <div class="email onecv-ico icoEmail js_onecv-item">
+                                       <span class="doc_email" style="font-size: 13px; line-height: 18px;">khanhthce@gmail.com</span>
+                                    </div>
+                                    <div class="phone onecv-ico icoPhone js_onecv-item">
+                                       <span class=" doc_phone" style="font-size: 13px; line-height: 18px;">0392505770</span>
+                                    </div>
+                                    <div class="website onecv-ico icoWebsite js_onecv-item" style="display: none;">
+                                       <span class="doc_website" style="font-size: 13px; line-height: 18px;"></span>
+                                    </div>
+                                    <div class="place onecv-ico icoPlace js_onecv-item">
+                                       <span class="doc_placeofbirth " style="font-size: 13px; line-height: 18px;">Hồ Chí Minh</span>
+                                    </div>
+                                    <div class="date onecv-ico icoDate js_onecv-item">
+                                       <span class="doc_dateofbirth" style="font-size: 13px; line-height: 18px;">05/10/2000</span>
+                                    </div>
+                                    <div class="linkedin onecv-ico icoLinkedin js_onecv-item">
+                                       <span class="doc_linkedin" style="font-size: 13px; line-height: 18px;">linkedin.com/in/topdev</span>
+                                    </div>
+                                    <div class="facebook onecv-ico icoFacebook js_onecv-item">
+                                       <span class="doc_facebook" style="font-size: 13px; line-height: 18px;">https://www.facebook.com/ace.khanh</span>
+                                    </div>
+                                    <div class="marital onecv-ico icoMarital js_onecv-item">
+                                       <span class="doc_marital" style="font-size: 13px; line-height: 18px;">Độc thân</span>
+                                    </div>
+                                    <div class="citizenship onecv-ico icoCiti js_onecv-item">
+                                       <span class="doc_citizenship" style="font-size: 13px; line-height: 18px;">Việt Nam</span>
+                                    </div>
+                                 </section>
+                                 <!--//contact-container-->
+                                 <!-- <hr style="border-top: 1px solid #444;"> -->
+                                 <div style="clear: both"></div>
+                              </div><div id="onecv-summary" class="onecv-block" data-section="summary" data-pos="2">
+                              <!-- toolbar -->
+                              <div class="options_toolbar">
+   
+                                 <div class="bt bt-del-block js_delete-block"></div>
+                                 <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                              </div>
+                              <!-- end toolbar -->
+                              <section class="section onecv-section"><!-- css editor hover -->
+                                 <!-- title -->
+                                    <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                    <div class="section-title-first title icon-experience">
+                                    <!-- css editor title -->
+                                       <span class="doc_title-summary">Tóm tắt</span>
+                                       
+                                       <!-- js title -->
+                                    </div>
+                                    <span class="after"></span>
+                                    </div>
+                                 <!-- list item summary -->
+                                 <div class="js_list-container-summary">
+                                    <!-- item summary -->
+                                    <div class="js_onecv-item" data-pos="1" data-uniqid="814e6eb2-7db4-e1a6-4f77-bf8239caaf73"><!-- js item -->
+                                       <div class="summary"><!-- css template summary -->
+                                          <div class="doc_summary" style="font-size: 13px; line-height: 18px;">kính gửi ông Huỳnh Phước Hải. Tôi tên là Từ Huy Khanh, hiện tại tôi 22 tuổi và đang là một designer và photographer tự do, hiện có nhiều kinh nghiệm trong việc thiết kế, xử lí hình ảnh, tôi có sở thích thiết kế những hình ảnh 3D và sáng tạo những nội dung về mặt hình ảnh, tôi có thể giao tiếp với khách hàng bằng việc sử dụng tiếng anh một cách thành thạo, với đam mê thiết kế hình ảnh tôi mong rằng có thể vào được công ty của ông để có thể sử dụng hết các kiến thức của mình để có giúp công ty.</div><!-- js summary -->
+                                       </div>
+                                    </div>
+                                    <!-- end item -->
+                                 </div>
+                              </section>
+                              <!--summary-section-->
+                           </div><div id="onecv-skills" class="onecv-block" data-section="skills" data-pos="5">
+                                 <!-- toolbar -->
+                                 <div class="options_toolbar">
+                                 
+                                    <div class="bt bt-del-block js_delete-block"></div>
+                                    <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                                 </div>
+                                 <!-- end toolbar -->
+                                 <section class="section onecv-section"><!-- css editor hover -->
+                                    <!-- title -->
+                                    <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                    <div class="section-title-first title icon-experience">
+                                    <!-- css editor title -->
+                                       <span class="doc_title-skills">Những kỹ năng</span>
+                                       
+                                       <!-- js title -->
+                                    </div>
+                                    <span class="after"></span>
+                                    </div>
+                                    <!-- List skills -->
+                                    <div class="sortable-skills js_list-container-skills ui-sortable">
+                                       <!-- item skill -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="316b2c32-a82c-9085-62e2-dd3dc08e7d01"><!-- js item -->
+                                          <div class="skillset upper-row"><!-- css template skill -->
+                                             <div class="level-title"><!-- css template skill-title -->
+                                                <div class="doc_skill" style="font-size: 14px; line-height: 18px;">c# </div><!-- js skill -->
+                                             </div>
+                                             <div class="level-star"><!-- css template -->
+                                                <div class="level-star-inner doc_level stylestar" data-level="50" style="font-size: 13px; line-height: 18px;">
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star"></span>
+                                                   <span class="star"></span>
+                                                                        
+                                                                        
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    
+                                       <!-- item skill -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="2" data-uniqid="60e22f42-bf83-ca82-544c-1245bde51b87"><!-- js item -->
+                                          <div class="skillset upper-row"><!-- css template skill -->
+                                             <div class="level-title"><!-- css template skill-title -->
+                                                <div class="doc_skill" style="font-size: 14px; line-height: 18px;">C++</div><!-- js skill -->
+                                             </div>
+                                             <div class="level-star"><!-- css template -->
+                                                <div class="level-star-inner doc_level stylestar" data-level="50" style="font-size: 13px; line-height: 18px;">
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star"></span>
+                                                   <span class="star"></span>
+                                                                        
+                                                                        
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    
+                                       <!-- item skill -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="3" data-uniqid="ce13970e-03d5-e3fd-2a26-fd906f0d9c48"><!-- js item -->
+                                          <div class="skillset upper-row"><!-- css template skill -->
+                                             <div class="level-title"><!-- css template skill-title -->
+                                                <div class="doc_skill" style="font-size: 14px; line-height: 18px;">AI</div><!-- js skill -->
+                                             </div>
+                                             <div class="level-star"><!-- css template -->
+                                                <div class="level-star-inner doc_level stylestar" data-level="100" style="font-size: 13px; line-height: 18px;">
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                                        
+                                                                        
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    
+                                       <!-- item skill -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="4" data-uniqid="3ac19865-78ca-8a83-4a26-d97301745f74"><!-- js item -->
+                                          <div class="skillset upper-row"><!-- css template skill -->
+                                             <div class="level-title"><!-- css template skill-title -->
+                                                <div class="doc_skill" style="font-size: 14px; line-height: 18px;">photoshop</div><!-- js skill -->
+                                             </div>
+                                             <div class="level-star"><!-- css template -->
+                                                <div class="level-star-inner doc_level stylestar" data-level="80" style="font-size: 13px; line-height: 18px;">
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star"></span>
+                                                                        
+                                                                        
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    
+                                       <!-- item skill -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="5" data-uniqid="d383e909-4f84-35ab-6dbe-6ea743a1bb7d"><!-- js item -->
+                                          <div class="skillset upper-row"><!-- css template skill -->
+                                             <div class="level-title"><!-- css template skill-title -->
+                                                <div class="doc_skill" style="font-size: 14px; line-height: 18px;">premiere</div><!-- js skill -->
+                                             </div>
+                                             <div class="level-star"><!-- css template -->
+                                                <div class="level-star-inner doc_level stylestar" data-level="50" style="font-size: 13px; line-height: 18px;">
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star checked_rating"></span>
+                                                   <span class="star"></span>
+                                                   <span class="star"></span>
+                                                                        
+                                                                        
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    </div>
+                                    <div class="bt-add-field js_add-field" style="font-size: 19px; line-height: 18px;">Thêm mới</div><!-- button add field -->
+                                 </section>
+                                 <!--//skills-section-->
+                              </div><div id="onecv-languages" class="onecv-block" data-section="languages" data-pos="6">
+                                 <!-- toolbar -->
+                                 <div class="options_toolbar">
+                                 
+                                    <div class="bt bt-del-block js_delete-block"></div>
+                                    <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                                 </div>
+                                 <!-- end toolbar -->
+                                 <section class="section onecv-section"><!-- css editor hover -->
+                                    <!-- title -->
+                                    <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                    <div class="section-title-first title icon-experience">
+                                    <!-- css editor title -->
+                                       <span class="doc_title-languages">Ngôn ngữ</span>
+                                       
+                                       <!-- js title -->
+                                    </div>
+                                    <span class="after"></span>
+                                    </div>
+                                    <!-- List skills -->
+                                    <div class="sortable-languages js_list-container-languages ui-sortable">
+                                       <!-- item language -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="587926d5-6157-89a4-9b05-add2ace38a17"><!-- js item -->
+                                          <div class="languages"> <!-- css template item languages -->
+                                             <div class="lang"><!-- css template language -->
+                                                <div class="doc_language" style="font-size: 13px; line-height: 18px;">English</div><!-- js language -->
+                                             </div>
+                                             <div class="fluency"><!-- css template fluency -->
+                                                <div class="doc_fluency" style="font-size: 13px; line-height: 18px;">good</div><!-- js fluency -->
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    
+                                       <!-- item language -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="2" data-uniqid="a6323148-55ce-fcd4-7f0f-312076f8cb63"><!-- js item -->
+                                          <div class="languages"> <!-- css template item languages -->
+                                             <div class="lang"><!-- css template language -->
+                                                <div class="doc_language" style="font-size: 13px; line-height: 18px;"><p>japanese</p></div><!-- js language -->
+                                             </div>
+                                             <div class="fluency"><!-- css template fluency -->
+                                                <div class="doc_fluency" style="font-size: 13px; line-height: 18px;">not bad</div><!-- js fluency -->
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    </div>
+                                    <div class="bt-add-field js_add-field" style="font-size: 19px; line-height: 18px;">Thêm mới</div><!-- button add field -->
+                                 </section>
+                                 <!--//skills-section-->
+                              </div><div id="onecv-interests" class="onecv-block" data-section="interests" data-pos="8">
+                                 <!-- toolbar -->
+                                 <div class="options_toolbar">
+                                 
+                                    <div class="bt bt-del-block js_delete-block"></div>
+                                    <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                                 </div>
+                                 <!-- end toolbar -->
+                                 <section class="section onecv-section"><!-- css editor hover -->
+                                    <!-- title -->
+                                    <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                    <div class="section-title-first title icon-experience">
+                                    <!-- css editor title -->
+                                       <span class="doc_title-interests">Sở thích</span>
+                                       
+                                       <!-- js title -->
+                                    </div>
+                                    <span class="after"></span>
+                                    </div>
+                                    <!-- List interests -->
+                                    <div class="sortable-interests js_list-container-interests ui-sortable">
+                                       <!-- item interest -->
+                                       <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="4460af66-0c03-3f0c-02e0-182a48622995"><!-- js item -->
+                                          <div class="interests"><!-- css template intersest -->
+                                             <div class="doc_interest" style="font-size: 13px; line-height: 18px;">Nghe nhạc, thể thao, đọc sách, du lịch, chụp ảnh</div><!-- js interest -->
+                                          </div>
+                                       </div>
+                                       <!-- end item -->
+                                    </div>
+                                    <!--interests-->
+                                    <div class="bt-add-field js_add-field" style="font-size: 19px; line-height: 18px;">Thêm mới</div><!-- button add fields -->
+                                 </section>
+                                 <!--//section-->
+                              </div></div>
+                        </div>
+                        <div id="col-main" class="sortable-main ui-sortable" style="min-height: 2244px;">
+                        <!-- Tách riêng contact và profile -->
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                        <div class="onecv-block" data-pos="1" data-section="personal_info">
+                                 <section class="contact-container onecv-section" style="text-align: center; border: 2px solid rgba(255, 255, 255, 0);">
+                                    <div class="name js_onecv-item">
+                                       <span class="doc_name" style="font-weight: 600; font-size: 38px; color: rgb(231, 190, 167); line-height: 18px;">Từ Huy Khanh</span>
+                                    </div>
+                                    <div class="tagline js_onecv-item">
+                                       <span class="doc_profession" style="font-weight: 100; font-size: 26px; color: rgb(174, 174, 174); line-height: 18px;">graphic design</span>
+                                    </div>
+                                 </section>
+                              </div><div id="onecv-education" class="onecv-block" data-section="education" data-pos="3">
+                              <!-- toolbar -->
+                              <div class="options_toolbar" style="display: none;">
+                                 <div class="tip"></div>
+                                 <div class="bt bt-del-block js_delete-block"></div>
+                                 <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                              </div>
+                              <!-- end toolbar -->
+                              <section class="section onecv-section" style="border: 2px solid rgba(255, 255, 255, 0);"><!-- css editor hover -->
+                                 <!-- title -->
+                                 <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                 <div class="section-title-first title icon-education">
+                                 <!-- css editor title -->
+                                    <span class="doc_title-education">Học tập</span>
+                                    
+                                    <!-- js title -->
+                                 </div>
+                                 <span class="after"></span>
+                                 </div>
+                                 <!-- List education -->
+                                 <div class="sortable-edu js_list-container-education ui-sortable">
+                                    <!-- item education -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="6b767be3-9451-0ed6-c80b-99bd8f573b10"><!-- js item -->
+                                       <div class="education"><!-- css template education -->
+                                          <div class="upper-row">
+                                             <div class="job-title"><!-- css template degree -->
+                                                <div class="doc_degree" style="font-weight: 700; color: rgb(63, 70, 80); font-size: 13px; line-height: 18px;">Cử nhân công nghệ thông tin</div><!-- js degree -->
+                                             </div>
+                                             
+                                          </div>
+                                          <div class="school upper-row"><!-- css template shool -->
+                                             <div class="doc_schoolname at inline" style="font-size: 13px; line-height: 18px;">Đại học An giang</div><!-- js schoool -->
+                                             <div class="inline"><!-- css template time -->
+                                                <span class="doc_MonthFromEdu onecv-month" style="font-size: 13px; line-height: 18px;">08</span>
+                                                <span class="doc_YearFromEdu" style="font-size: 13px; line-height: 18px;">2018</span> -
+                                                <span class="doc_MonthToEdu onecv-month" style="font-size: 13px; line-height: 18px;">12</span>
+                                                <span class="doc_YearToEdu" style="font-size: 13px; line-height: 18px;">2022</span>
+                                             </div>
+                                          </div>
+
+                                          <div class="details"><!-- css template details -->
+                                             <div class="doc_description" style="font-size: 13px; line-height: 18px;">Xếp loại học lực: giỏi</div><!-- js details -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- end item -->
+                                 </div>
+                                 <div class="bt-add-field js_add-field" style="display: none; font-size: 19px; line-height: 18px;">Thêm mới</div>
+                              </section>
+                              <!--//education-section-->
+                           </div><div id="onecv-experience" class="onecv-block" data-section="experience" data-pos="4">
+                              <!-- toolbar -->
+                              <div class="options_toolbar" style="display: none;">
+                                 <div class="tip"></div>
+                                 <div class="bt bt-del-block js_delete-block"></div>
+                                 <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                              </div>
+                              <!-- end toolbar -->
+                              <section class="section onecv-section" style="border: 2px solid rgba(255, 255, 255, 0);"><!-- css editor hover -->
+                                 <!-- title -->
+                                 <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                 <div class="section-title-first title icon-experience">
+                                 <!-- css editor title -->
+                                    <span class="doc_title-experience">Kinh nghiệm</span>
+                                    
+                                    <!-- js title -->
+                                 </div>
+                                 <span class="after"></span>
+                                 </div>
+                                 <!-- List experience -->
+                                 <div class="sortable-exp js_list-container-experience ui-sortable">
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="2adba510-d700-87a9-5a1c-ffbac771eb1e"><!-- js item -->
+                                       <div class="experience"> <!-- css template experience -->
+                                          <div class="upper-row">
+                                             <div class="job-title"><!-- css template position -->
+                                                <div class="doc_position" style="font-weight: 700; color: rgb(63, 70, 80); font-size: 13px; line-height: 18px;">staff</div><!-- js position -->
+                                             </div>
+                                             
+                                          </div>
+                                          <div class="company upper-row"><!-- css template company -->
+                                             <div class="doc_company at inline" style="font-size: 13px; line-height: 18px;">Anh Khang D<p>ecade</p></div><!-- js company -->
+                                             <div class="inline"><!-- css template time -->
+                                                <span class="doc_MonthFromExp onecv-month" style="font-size: 13px; line-height: 18px;">10</span>
+                                                <span class="doc_YearFromExp" style="font-size: 13px; line-height: 18px;">2018</span> -
+                                                <span class="doc_MonthToExp onecv-month" style="font-size: 13px; line-height: 18px;">10</span>
+                                                <span class="doc_YearToExp" style="font-size: 13px; line-height: 18px;">2020</span>
+                                             </div>
+                                          </div>
+                                          <div class="details"><!-- css template details -->
+                                             <div class="doc_experience" style="font-size: 13px; line-height: 18px;"><ul><li><i>nhân viên design một cửa hàng bán quần áo</i></li><li>thu ngân </li><li>kiểm kho </li><li>quan lí bán hàng</li></ul></div><!-- js details -->
+                                          </div>
+                                       </div>   
+                                    </div>
+                                 </div>
+                                 <div class="bt-add-field js_add-field" style="font-size: 19px; display: none; line-height: 18px;">Thêm mới</div><!-- button add field -->
+                              </section>
+                              <!--//experience-section-->
+                           </div><div id="onecv-activities" class="onecv-block" data-section="activities" data-pos="6">
+                              <!-- toolbar -->
+                              <div class="options_toolbar">
+                                 <div class="tip"></div>
+                                 <div class="bt bt-del-block js_delete-block"></div>
+                                 <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                              </div>
+                              <!-- end toolbar -->
+                              <section class="section onecv-section"><!-- css editor hover -->
+                                 <!-- title -->
+                                 <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                 <div class="section-title-first title icon-activities">
+                                 <!-- css editor title -->
+                                    <span class="doc_title-activities">Hoạt động</span>
+                                    
+                                    <!-- js title -->
+                                 </div>
+                                 <span class="after"></span>
+                                 </div>
+                                 <!-- List activities -->
+                                 <div class="sortable-activities js_list-container-activities ui-sortable">
+                                    <!-- item activities -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="2216c829-d61a-4856-86e6-016ccdf1af41"><!-- js item -->
+                                       <div class="activities"><!-- css template activities -->
+                                          <div class="activity"> <!-- css template field activity-->
+                                             <p class="doc_activity" style="font-size: 13px; line-height: 19.5px;">Tham gia giải đá cầu của trường</p><!-- js activity -->
+                                          </div>
+                                          <div class="details"><!-- css template field details-->
+                                             <div class="doc_achievement" style="font-size: 13px; line-height: 18px;">giải nhất chung cuộc</div><!-- js achievement -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                 
+                                    <!-- item activities -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="2" data-uniqid="4b353789-a25c-e0e9-a453-04fdd4a12e92"><!-- js item -->
+                                       <div class="activities"><!-- css template activities -->
+                                          <div class="activity"> <!-- css template field activity-->
+                                             <p class="doc_activity" style="font-size: 13px; line-height: 19.5px;">giải thiết kế logo của trường</p><!-- js activity -->
+                                          </div>
+                                          <div class="details"><!-- css template field details-->
+                                             <div class="doc_achievement" style="font-size: 13px; line-height: 18px;">đạt gải khuyến khích</div><!-- js achievement -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                 
+                                    <!-- item activities -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="3" data-uniqid="54183cbf-ea09-4b68-8092-3740cf1d3e5a"><!-- js item -->
+                                       <div class="activities"><!-- css template activities -->
+                                          <div class="activity"> <!-- css template field activity-->
+                                             <p class="doc_activity" style="font-size: 13px; line-height: 19.5px;">giải thiết kế logo của trường</p><!-- js activity -->
+                                          </div>
+                                          <div class="details"><!-- css template field details-->
+                                             <div class="doc_achievement" style="font-size: 13px; line-height: 18px;">đạt gải khuyến khích</div><!-- js achievement -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                 
+                                    <!-- item activities -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="4" data-uniqid="6569d1fa-adf2-3d0b-43b3-60656b718732"><!-- js item -->
+                                       <div class="activities"><!-- css template activities -->
+                                          <div class="activity"> <!-- css template field activity-->
+                                             <p class="doc_activity" style="font-size: 13px; line-height: 19.5px;">thiết kế ảnh bìa cho một cửa hàng </p><!-- js activity -->
+                                          </div>
+                                          <div class="details"><!-- css template field details-->
+                                             <div class="doc_achievement" style="font-size: 13px; line-height: 18px;">được sử dụng ở bìa cửa hàng</div><!-- js achievement -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="bt-add-field js_add-field" style="font-size: 19px; line-height: 18px;">Thêm mới</div> <!-- button add fields -->
+                              </section>
+                              <!--activities-section-->
+                           </div><div id="onecv-references" class="onecv-block" data-section="references" data-pos="9">
+                              <!-- toolbar -->
+                              <div class="options_toolbar">
+                                 <div class="tip"></div>
+                                 <div class="bt bt-del-block js_delete-block"></div>
+                                 <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                              </div>
+                              <!-- end toolbar -->
+                              <section class="section onecv-section"><!-- css editor hover -->
+                                 <!-- title -->
+                                 <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                 <div class="section-title-first title icon-references">
+                                 <!-- css editor title -->
+                                    <span class="doc_title-references">Người tham khảo</span>
+                                    
+                                    <!-- js title -->
+                                 </div>
+                                 <span class="after"></span>
+                                 </div>
+                                 <!-- List references -->
+                                 <div class="sortable-references js_list-container-references ui-sortable">
+                                    <!-- item references -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="8994f875-4140-a05f-7134-8151cb01bf7f"><!-- js item -->
+                                       <div class="references"><!-- css template references -->
+                                          <div class="name"><!-- css template references name -->
+                                             <p class="doc_refer_name" style="font-weight: 700; color: rgb(63, 70, 80); font-size: 13px; line-height: 19.5px;">Nguyễn Minh tâm</p><!-- js references name -->
+                                          </div>
+                                          <div class="details"><!-- css template details-->
+                                             <div class="doc_refer_profession" style="font-size: 13px; line-height: 18px;">singer</div><!-- js references profession -->
+                                             <div class="doc_refer_email" style="font-size: 13px; line-height: 18px;">kaitokid057@gmail.com</div><!-- js references mail -->
+                                             <div class="doc_refer_phone" style="font-size: 13px; line-height: 18px;">0868384803</div><!-- js references phone -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- end item references -->
+                                 
+                                    <!-- item references -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="2" data-uniqid="e3bf4d4a-f713-d3bb-9f08-de75bbcc4449"><!-- js item -->
+                                       <div class="references"><!-- css template references -->
+                                          <div class="name"><!-- css template references name -->
+                                             <p class="doc_refer_name" style="font-weight: 700; color: rgb(63, 70, 80); font-size: 13px; line-height: 19.5px;">Nguyễn Lê Gia Khang</p><!-- js references name -->
+                                          </div>
+                                          <div class="details"><!-- css template details-->
+                                             <div class="doc_refer_profession" style="font-size: 13px; line-height: 18px;">bad staff</div><!-- js references profession -->
+                                             <div class="doc_refer_email" style="font-size: 13px; line-height: 18px;">khangnguyen@gmail.com</div><!-- js references mail -->
+                                             <div class="doc_refer_phone" style="font-size: 13px; line-height: 18px;">0909123456</div><!-- js references phone -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- end item references -->
+                                 </div>
+                                 <div class="bt-add-field js_add-field" style="font-size: 19px; line-height: 18px;">Thêm mới</div><!-- button add field -->
+                              </section>
+                              <!--references-section-->
+                           </div><div id="onecv-projects" class="onecv-block" data-section="projects" data-pos="10">
+                              <!-- toolbar -->
+                              <div class="options_toolbar">
+                                 <div class="tip"></div>
+                                 <div class="bt bt-del-block js_delete-block"></div>
+                                 <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                              </div>
+                              <!-- end toolbar -->
+                              <section class="section onecv-section"><!-- css editor hover -->
+                                 <!-- title -->
+                                 <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                 <div class="section-title-first title icon-projects">
+                                 <!-- css editor title -->
+                                    <span class="doc_title-projects">Dự án</span>
+                                    
+                                    <!-- js title -->
+                                 </div>
+                                 <span class="after"></span>
+                                 </div>
+                                 <!-- List projects -->
+                                 <div class="sortable-projects js_list-container-projects ui-sortable">
+                                    <!-- item -->
+                                    <div class="js_onecv-item ui-sortable-handle" data-pos="1" data-uniqid="0ede9514-72cf-7255-4847-1f8da8c4f1e8"><!-- js item -->
+                                       <div class="projects"><!-- css template project -->
+                                          <p class="doc_project" style="font-size: 13px; line-height: 19.5px;">xây dựng một công ty thiết kế nhà của riêng mình</p><!-- js project -->
+                                       </div>
+                                    </div>
+                                    <!-- end item -->
+                                 </div>
+                              </section>
+                              <!--projects-section-->
+                           </div><div id="onecv-additional" class="onecv-block" data-section="additional" data-pos="11">
+                              <!-- toolbar -->
+                              <div class="options_toolbar">
+                                 <div class="tip"></div>
+                                 <div class="bt bt-del-block js_delete-block"></div>
+                                 <div class="bt bt-handle    js_sortable-handle ui-sortable-handle"></div>
+                              </div>
+                              <!-- end toolbar -->
+                              <section class="section onecv-section"><!-- css editor hover -->
+                                 <!-- title -->
+                                <div class="section-title" style="font-size: 16px; line-height: 18px;">
+                                    
+                                 <div class="section-title-first title icon-additional">
+                                 <!-- css editor title -->
+                                    <span class="doc_title-additional">Thông tin thêm</span>
+                                    
+                                    <!-- js title -->
+                                 </div>
+                                 <span class="after"></span>
+                                 </div>
+                                 <!-- list item additional -->
+                                 <div class="js_list-container-additional">
+                                    <!-- item  additional-->
+                                    <div class="js_onecv-item" data-pos="1" data-uniqid="a24c8d9b-17df-f6db-552e-0457a447a128"><!-- js item -->
+                                       <div class="additional"><!-- css template additional-->
+                                          <div class="doc_additional" style="font-size: 13px; line-height: 18px;"><p>- Có nhiều kỹ năng mềm, vui vẻ hòa đồng với đồng nghiệp.</p><p>- Chăm chỉ, cầu tiến, khả năng teamwork tốt.</p></div><!-- js additional -->
+                                       </div>
+                                    </div>
+                                    <!-- end item -->
+                                 </div>
+                              </section>
+                              <!--//summary-section-->
+                           </div></div>
+                        
+                        <div style="clear: both;"></div>
+                     </div>
+                     <div style="clear: both;"></div>
+                  </div>
+               </div>
+               <div class="js_add-sections css_add-sections">Thêm mục</div> <!-- button add sections -->
+            </div>
+         </div>
+      </div>
+</div>
